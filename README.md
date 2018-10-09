@@ -1,19 +1,19 @@
 
 ## Contents
-- [What ASCIIFY is](#what-asciify-is)
-- [How ASCIIFY works](#how-asciify-works)
-- [How to use ASCIIFY](#how-to-use-asciify)
+- [What OpenITS  is](#what-OpenITS -is)
+- [How OpenITS  works](#how-OpenITS -works)
+- [How to use OpenITS ](#how-to-use-OpenITS )
 - [Future Plans](#future-plans)
 - [Support me](#support-me)
 
-## What ASCIIFY is
-ASCIIFY is a python script that takes in as input an image, and returns a text output that resembles the input image.
+## What OpenITS  is
+OpenITS  is a python script that takes in as input an image, and returns a text output that resembles the input image.
 In other words, it replicates an image with certain characters.
 
 For example, when the following image of Octocat - 
 ![](https://github.com/cumtlzc/asciify/blob/master/1.jpg)
 
-is passed as a parameter into ASCIIFY, the following output is observed -
+is passed as a parameter into OpenITS , the following output is observed -
 
 ```
 ***********************S***************************?%S?***********************************
@@ -93,7 +93,7 @@ is passed as a parameter into ASCIIFY, the following output is observed -
 ************************#S#SSS#***********************************************************
 ```
 -------------------------------------------------------------------------------------------------------
-## How ASCIIFY works
+## How OpenITS  works
 ASCIIFY works in a rather simple and intuitive way.
 Here's the algorithm -
 - Resize the image to a standard dimension, while maintaining aspect ratio
@@ -105,7 +105,7 @@ Here's the algorithm -
 - Profit!
 
 -------------------------------------------------------------------------------------------------------
-## How to use ASCIIFY
+## How to use OpenITS 
 - Ensure you have the required dependency "PIL" for Python installed. (pip install pillow)
 - Clone the repo
 - Run the python script, and pass the image path as the parameter
