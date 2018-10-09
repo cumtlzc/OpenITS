@@ -8,10 +8,10 @@ method resize():
     - takes as parameters the image, and the final width
     - resizes the image into the final width while maintaining aspect ratio
 '''
-def resize(image, new_width=100):
+def resize(image, new_width=90):
     (old_width, old_height) = image.size
     aspect_ratio = float(old_height)/float(old_width)
-    new_height = int(aspect_ratio * new_width)
+    new_height = int(aspect_ratio * new_width-40)
     new_dim = (new_width, new_height)
     new_image = image.resize(new_dim)
     return new_image
@@ -27,7 +27,7 @@ def grayscalify(image):
 method modify():
     - replaces every pixel with a character whose intensity is similar
 '''
-def modify(image, buckets=25):
+def modify(image, buckets=50):
     initial_pixels = list(image.getdata())
     new_pixels = [ASCII_CHARS[pixel_value//buckets] for pixel_value in initial_pixels]
     return ''.join(new_pixels)
@@ -36,7 +36,7 @@ def modify(image, buckets=25):
 method do():
     - does all the work by calling all the above functions
 '''
-def do(image, new_width=100):
+def do(image, new_width=90):
     image = resize(image)
     image = grayscalify(image)
 
@@ -80,12 +80,16 @@ method main():
     - reads input from console
     - profit
 '''
-if __name__ == '__main__':
-    import sys
-    import urllib.request
-    if sys.argv[1].startswith('http://') or sys.argv[1].startswith('https://'):
-        urllib.request.urlretrieve(sys.argv[1], "asciify.jpg")
-        path = "asciify.jpg"
-    else:
-        path = sys.argv[1]
-    runner(path)
+
+#if __name__ == '__main__':
+	
+    #import sys
+    #import urllib.request
+	#if sys.argv[1].startswith('http://') or sys.argv[1].startswith('http://'):
+       # urllib.request.urlretrieve(sys.argv[1], "asciify.jpg")
+       # path = "asciify.jpg"
+    #else:
+        #path = sys.argv[1]
+path = "D:\\Application\\asciify\\1.jpg"	
+runner(path)
+
