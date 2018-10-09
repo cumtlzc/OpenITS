@@ -1,7 +1,7 @@
 
 ## Contents
-- [What OpenITS  is](#what-OpenITS -is)
-- [How OpenITS  works](#how-OpenITS -works)
+- [What OpenITS  is](#what-OpenITS-is)
+- [How OpenITS  works](#how-OpenITS-works)
 - [How to use OpenITS ](#how-to-use-OpenITS )
 - [Future Plans](#future-plans)
 - [Support me](#support-me)
