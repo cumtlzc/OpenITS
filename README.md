@@ -11,7 +11,7 @@ ASCIIFY is a python script that takes in as input an image, and returns a text o
 In other words, it replicates an image with certain characters.
 
 For example, when the following image of Octocat - 
-![](https://github.com/RameshAditya/asciify/blob/master/octocat.png)
+![](https://github.com/cumtlzc/asciify/blob/master/1.jpg)
 
 is passed as a parameter into ASCIIFY, the following output is observed -
 
